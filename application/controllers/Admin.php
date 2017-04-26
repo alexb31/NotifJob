@@ -30,6 +30,26 @@ class Admin extends CI_Controller {
         $this->template_back('back/offres.php', $data);
     }
 
+    public function metiers()
+    {
+        //$this->grocery_crud->set_table('offres');
+        //$this->grocery_crud->set_field_upload('file_url','assets/uploads/files');
+
+        //$data = $this->grocery_crud->render();
+
+        $this->template_back('back/metiers.php');
+    }
+
+    public function lieux()
+    {
+        //$this->grocery_crud->set_table('offres');
+        //$this->grocery_crud->set_field_upload('file_url','assets/uploads/files');
+
+        //$data = $this->grocery_crud->render();
+
+        $this->template_back('back/lieux.php');
+    }
+
     function template_back($view = '', $data = '')
     {
         $this->template->load('back/template.php', $view, $data);

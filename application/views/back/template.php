@@ -279,6 +279,12 @@
                         <li>
                             <a href="forms.html"><i class="fa fa-edit fa-fw"></i> Offres d'emplois</a>
                         </li>
+                        <li>
+                            <a href="forms.html"><i class="fa fa-edit fa-fw"></i> Métiers</a>
+                        </li>
+                        <li>
+                            <a href="forms.html"><i class="fa fa-edit fa-fw"></i> Lieux</a>
+                        </li>
                     </ul>
                 </div>
                 <!-- /.sidebar-collapse -->
