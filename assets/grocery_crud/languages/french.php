@@ -7,7 +7,7 @@
 	$lang['list_displaying']		= 'Affichage de {start} à {end} de {results} enregistrements';
 	$lang['list_filtered_from']		= '(filtré de {total_results} entrées au total)';
 	$lang['list_show_entries']		= 'Afficher {paging} entrées';
-	$lang['list_no_items']			= 'Aucun enregistrement à afficher';
+	$lang['list_no_items']			= 'Aucune offre à afficher';
 	$lang['list_zero_entries']		= 'Affichage de 0 à 0 de 0 enregistrement';
 	$lang['list_search'] 			= 'Recherche';
 	$lang['list_search_all'] 		= 'Tous critères';
