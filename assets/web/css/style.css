@@ -32,7 +32,7 @@ section {
 /***************************
 ------- Header-Content ------
 *****************************/
-header{
+#template-header{
 	min-height: 680px !important;
 	
 }
@@ -151,4 +151,87 @@ footer a{
 }
 .reseaux-sociaux a{
 	margin: 0 10px;
+}
+
+/***************************
+----------- Recherche -----------
+*****************************/
+
+#header-recherche{
+	background-position: center;
+    background-image: url(../img/bg-recherche.png) !important;
+	min-height: 310px !important;
+}
+#header-recherche .header-content{
+	background-color: rgba(74, 88, 97, 0.80) !important;
+}
+#header-recherche h3{
+	font-family: 'Roboto', sans-serif;
+}
+#header-recherche span{
+	font-family: 'Roboto', sans-serif;
+	font-weight: 600;
+	color: #ed8111;
+}
+.filter-select {
+    margin: 0 auto;
+}
+
+.filter-select select {
+    border-radius: 50px !important;
+    border-radius: 50px !important;
+}
+.ctn-btn-lancer {  
+    text-align: center;
+    margin-top: 50px;
+}
+
+section#all-offres {
+    padding-top: 0 !important;
+	padding-bottom: 0 !important;
+}
+
+.featured-box{
+	padding:0 0 0 0;
+	margin-bottom:25px;
+	font-size:14px;
+	position: relative;
+	
+	-moz-box-shadow: 2px 2px 6px 0px #656565;
+	-webkit-box-shadow: 2px 2px 6px 0px #656565;
+	-o-box-shadow: 2px 2px 6px 0px #656565;
+	box-shadow: 2px 2px 6px 0px #656565;	
+}
+.featured-box h3{
+	margin-bottom:5px;
+	color: #4a5861;
+}
+.featured-box p{
+	line-height:22px;
+	color: #ed8111;
+}
+
+.featured-box-col1{
+	width: 120px;
+    float: left;       
+    padding: 16px 0;
+    text-align: center;
+    margin-right: 50px;
+	background-color: #4a5861;
+	color: #fff;
+}
+.featured-box-col1 span{
+	color: #fff;
+	font-size: 30px;
+    font-weight: 900;
+}
+
+.featured-box-col2{
+	overflow:hidden;
+}
+.featured-box-col3 {
+	padding: 27px;
+	position: absolute;
+	right: 0;
+	top: 0;
 }
