@@ -77,6 +77,12 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <div id="container">
     <h1>Test d'aptitude</h1>
 
+    <form method="" action="<?php echo base_url();?>index.php/users/registration">
+
+        <input type="submit" value="S'inscrire">
+
+    </form>
+
     <form method="" action="<?php echo base_url();?>index.php/Questions/quizdisplay">
 
         <input type="submit" value="Commencer">

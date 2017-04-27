@@ -13,7 +13,7 @@ class Questions extends CI_Controller {
     {
         $this->load->model('quizmodel');
         $this->data['questions'] = $this->quizmodel->getQuestions();
-        $this->load->view('play_quiz', $this->data);
+        $this->load->view('front/play_quiz', $this->data);
     }
 
     public function resultdisplay()
@@ -25,6 +25,6 @@ class Questions extends CI_Controller {
 
         $this->load->model('quizmodel');
         $this->data['results'] = $this->quizmodel->getQuestions();
-        $this->load->view('result_display', $this->data);
+        $this->load->view('front/result_display', $this->data);
     }
 }
