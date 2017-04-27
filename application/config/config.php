@@ -35,7 +35,7 @@ $config['base_url'] = 'http://localhost/NotifJob/';
 | variable so that it is blank.
 |
 */
-$config['index_page'] = 'index.php';
+$config['index_page'] = '';
 
 $config['admin_email'] = 'alexandrebornstein@gmail.com';
 
@@ -56,7 +56,7 @@ $config['bot_email'] = 'alexandrebornstein@gmail.com';
 |
 | WARNING: If you set this to 'PATH_INFO', URIs will always be URL-decoded!
 */
-$config['uri_protocol']	= 'REQUEST_URI';
+$config['uri_protocol']	= 'AUTO';
 
 /*
 |--------------------------------------------------------------------------

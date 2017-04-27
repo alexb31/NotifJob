@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>SB Admin 2 - Bootstrap Admin Theme</title>
+    <title>Espace recruteur</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="<?php echo base_url();?>assets/startbootstrap-sb-admin-2-gh-pages/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -45,7 +45,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.html">SB Admin v2.0</a>
+                <a class="navbar-brand" href="index.html">Espace recruteur</a>
             </div>
             <!-- /.navbar-header -->
 
@@ -274,16 +274,16 @@
                             <!-- /input-group -->
                         </li>
                         <li>
-                            <a href="index.html"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
+                            <a href="<?php echo base_url();?>index.php/admin"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
                         </li>
                         <li>
-                            <a href="forms.html"><i class="fa fa-edit fa-fw"></i> Offres d'emplois</a>
+                            <a href="<?php echo base_url();?>index.php/admin/offres"><i class="fa fa-edit fa-fw"></i> Offres d'emplois</a>
                         </li>
                         <li>
-                            <a href="forms.html"><i class="fa fa-edit fa-fw"></i> Métiers</a>
+                            <a href="<?php echo base_url();?>index.php/admin/metiers"><i class="fa fa-edit fa-fw"></i> Métiers</a>
                         </li>
                         <li>
-                            <a href="forms.html"><i class="fa fa-edit fa-fw"></i> Lieux</a>
+                            <a href="<?php echo base_url();?>index.php/admin/lieux"><i class="fa fa-edit fa-fw"></i> Lieux</a>
                         </li>
                     </ul>
                 </div>
