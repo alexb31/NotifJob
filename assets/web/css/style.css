@@ -154,7 +154,7 @@ footer a{
 }
 
 /***************************
------------ Recherche -----------
+----------- Recherche/Une -----------
 *****************************/
 
 #header-recherche, #header-une{
@@ -237,5 +237,36 @@ section#all-offres {
 	top: 0;
 }
 .ctn-voir-offres{
+	text-align: center;
+}
+
+/***************************
+----------- Login -----------
+*****************************/
+
+.header-orange{
+	background: url(../img/bg-orange.png) repeat-y bottom;
+    min-height: 150px !important;
+}
+.header-orange h3{
+	text-align: center;
+	color: #fff;
+	font-family: 'Roboto', sans-serif;
+	padding-top: 70px;
+}
+#login-section {
+    max-width: 350px;
+    margin: 0 auto;
+}
+#login-section p{
+	text-align: center;
+}
+.from-section input{
+	border-radius: 50px;
+}
+.from-section label{
+	color: #ed8111; 
+}
+.form-btn{
 	text-align: center;
 }
