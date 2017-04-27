@@ -157,18 +157,18 @@ footer a{
 ----------- Recherche -----------
 *****************************/
 
-#header-recherche{
+#header-recherche, #header-une{
 	background-position: center;
     background-image: url(../img/bg-recherche.png) !important;
 	min-height: 310px !important;
 }
-#header-recherche .header-content{
+.header-pages{
 	background-color: rgba(74, 88, 97, 0.80) !important;
 }
-#header-recherche h3{
+.header-pages h3{
 	font-family: 'Roboto', sans-serif;
 }
-#header-recherche span{
+.header-pages span{
 	font-family: 'Roboto', sans-serif;
 	font-weight: 600;
 	color: #ed8111;
@@ -228,10 +228,14 @@ section#all-offres {
 
 .featured-box-col2{
 	overflow:hidden;
+	padding-left: 10px;
 }
 .featured-box-col3 {
 	padding: 27px;
 	position: absolute;
 	right: 0;
 	top: 0;
+}
+.ctn-voir-offres{
+	text-align: center;
 }

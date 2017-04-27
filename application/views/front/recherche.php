@@ -6,7 +6,7 @@
     include("_menu.php");
 ?>
 	<header id="header-recherche">
-        <div class="header-content">
+        <div class="header-content header-pages">
             <div class="header-content-inner">
                 <a class="homeHeading" href="">
                     <img src="<?php echo base_url();?>assets/web/img/icons/search.png" class="img-responsive" alt="">    
@@ -62,27 +62,27 @@
 			<div class="row">			
 					
 				<div class="featured-box">
-					<div class="featured-box-col1 wow fadeInRight delay-02s">
+					<div class="featured-box-col1 hidden-xs">
 							<span>144</span></br>candidatures
 					</div>	
-					<div class="featured-box-col2 wow fadeInRight delay-02s">
+					<div class="featured-box-col2">
 							<h3>Développeur Front End</h3>
 							<p>A partir du 10/05/2017</p>						
 					</div>
-					<div class="featured-box-col3 wow fadeInRight delay-02s">
+					<div class="featured-box-col3">
 							<button type="button" class="btn-detail"><i class="fa fa-2x fa-eye" aria-hidden="true"></i></button>
 					</div>					
 				</div>
 			
 				<div class="featured-box">
-					<div class="featured-box-col1 wow fadeInRight delay-02s">
+					<div class="featured-box-col1 hidden-xs">
 							<span>101</span></br>candidatures
 					</div>	
-					<div class="featured-box-col2 wow fadeInRight delay-02s">
+					<div class="featured-box-col2">
 							<h3>Web Designer</h3>
 							<p>A partir du 10/05/2017</p>						
 					</div>
-					<div class="featured-box-col3 wow fadeInRight delay-02s">
+					<div class="featured-box-col3">
 							<button type="button" class="btn-detail"><i class="fa fa-2x fa-eye" aria-hidden="true"></i></button>
 					</div>					
 				</div>         

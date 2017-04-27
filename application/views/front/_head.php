@@ -13,6 +13,8 @@
 	
 	<!-- Universal CSS -->
     <link href="<?php echo base_url();?>assets/web/css/style.css" rel="stylesheet">
+	<link href="<?php echo base_url();?>assets/web/css/media-queries.css" rel="stylesheet">
+	
 
     <!-- Bootstrap Core CSS -->
     <link href="<?php echo base_url();?>assets/web/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
