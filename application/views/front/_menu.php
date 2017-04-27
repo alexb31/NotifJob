@@ -6,7 +6,7 @@
                     <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
                 </button>
                 <a class="navbar-brand page-scroll" href="#page-top">
-                    <img src="../web/img/logo-menu.png" class="img-responsive" alt="">    
+                    <img src="../../application/web/img/logo-menu.png" class="img-responsive" alt="">    
                 </a>
             </div>
 

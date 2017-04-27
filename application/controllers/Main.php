@@ -17,22 +17,11 @@ class Main extends CI_Controller {
 
     public function index()
     {
-        echo "<h1>Welcome to the world of Codeigniter</h1>";//Just an example to ensure that we get into the function
-        die();
+        $this->template_front('front/accueil.php');
     }
 
-    public function offres()
+    function template_front($view = '', $data = '')
     {
-        $this->grocery_crud->set_table('offres');
-        $this->grocery_crud->set_field_upload('file_url','assets/uploads/files');
-        $output = $this->grocery_crud->render();
-
-        $this->_example_output($output);
-    }
-
-    function _example_output($output = null)
-
-    {
-        $this->load->view('templates.php',$output);
+        $this->template->load('front/template.php', $view, $data);
     }
 }
