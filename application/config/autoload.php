@@ -146,4 +146,4 @@ $autoload['model'] = array();
 |    $autoload['libraries'] = array('database', 'session', 'xmlrpc');
 */
 
-$autoload['libraries'] = array('template', 'database');
+$autoload['libraries'] = array('template', 'database', 'session');

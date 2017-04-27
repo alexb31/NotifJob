@@ -15,11 +15,10 @@ class User_model extends CI_Model {
             'prenom' => $this->input->post('prenom'),
             'nom' => $this->input->post('nom'),
             'email' => $this->input->post('email'),
+            'telephone' => $this->input->post('telephone'),
             'mdp' => $this->input->post('mdp'),
             'competences' => $this->input->post('competences'),
-            'experiences' => $this->input->post('experiences'),
-            'hash' => md5(rand(0, 1000))
-
+            'experiences' => $this->input->post('experiences')
         );
         $this->db->insert($this->table_candidats, $data);
         $insert_id = $this->db->insert_id();

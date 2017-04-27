@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Client :  127.0.0.1
--- Généré le :  Mar 25 Avril 2017 à 17:58
+-- Généré le :  Jeu 27 Avril 2017 à 19:17
 -- Version du serveur :  5.7.14
 -- Version de PHP :  5.6.25
 
@@ -37,19 +37,22 @@ CREATE TABLE `candidats` (
   `cv` varchar(255) NOT NULL,
   `lien-linkedin` varchar(255) NOT NULL,
   `mdp` varchar(255) NOT NULL,
-  `age` varchar(100) NOT NULL
+  `age` varchar(100) NOT NULL,
+  `password` varchar(40) NOT NULL,
+  `status` bit(1) NOT NULL DEFAULT b'0',
+  `telephone` int(12) NOT NULL,
+  `created` datetime NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
--- --------------------------------------------------------
-
 --
--- Structure de la table `lm`
+-- Contenu de la table `candidats`
 --
 
-CREATE TABLE `lm` (
-  `id` int(11) NOT NULL,
-  `description` varchar(255) NOT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+INSERT INTO `candidats` (`id`, `email`, `prenom`, `nom`, `competences`, `etudes`, `experiences`, `cv`, `lien-linkedin`, `mdp`, `age`, `password`, `status`, `telephone`, `created`) VALUES
+(56, 'alexandrebornstein@gmail.com', 'Alex', 'Born', '', '', '', '', '', 'a', '', '', b'0', 0, '0000-00-00 00:00:00'),
+(55, 'alexandrebornstein@gmail.com', 'rg', 'rgb', '', '', '', '', '', 'a', '', '', b'0', 0, '0000-00-00 00:00:00'),
+(54, 'alexandrebornstein@gmail.com', 'alex', 'bor', '', '', '', '', '', 'a', '', '', b'0', 0, '0000-00-00 00:00:00'),
+(53, 'alexandrebornstein@gmail.com', 'fbdb', 'fdbdb', '', '', '', '', '', 'aa', '', '', b'0', 0, '0000-00-00 00:00:00');
 
 -- --------------------------------------------------------
 
@@ -73,6 +76,94 @@ CREATE TABLE `offres` (
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 --
+-- Contenu de la table `offres`
+--
+
+INSERT INTO `offres` (`id`, `intitule`, `description`, `lieu`, `type`, `date_debut`, `date_publication`, `competences`, `experiences`, `lien_offre`, `etudes`, `email`) VALUES
+(7, 'La base', 'Trkl', '', '', '0000-00-00', '0000-00-00', '', '', '', '', ''),
+(5, 'dfbdbdfb', '<p>\r\n	tdntene</p>\r\n', 'paris', '', '0000-00-00', '0000-00-00', '', '', '', '', ''),
+(6, 'rgbrdb', '', '', '', '0000-00-00', '0000-00-00', '', '', '', '', '');
+
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `quiz`
+--
+
+CREATE TABLE `quiz` (
+  `id` int(11) NOT NULL,
+  `question` varchar(255) NOT NULL,
+  `choice1` varchar(255) NOT NULL,
+  `choice2` varchar(255) NOT NULL,
+  `choice3` varchar(255) NOT NULL,
+  `answer` varchar(255) NOT NULL,
+  `id_offre` int(11) NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+--
+-- Contenu de la table `quiz`
+--
+
+INSERT INTO `quiz` (`id`, `question`, `choice1`, `choice2`, `choice3`, `answer`, `id_offre`) VALUES
+(1, 'De quelle couleur est la couleur bleu ?', 'Rouge', 'Vert', 'Noir', 'Bleu', 0),
+(2, '1 + 1', '3', '6', '11', '2', 0);
+
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `score`
+--
+
+CREATE TABLE `score` (
+  `id` int(11) NOT NULL,
+  `score` varchar(255) NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `users`
+--
+
+CREATE TABLE `users` (
+  `id` int(11) NOT NULL,
+  `fname` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `name` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
+  `email` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
+  `skills` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `experiences` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `birthday` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `password` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `gender` enum('Male','Female') COLLATE utf8_unicode_ci NOT NULL,
+  `phone` varchar(15) COLLATE utf8_unicode_ci NOT NULL,
+  `created` datetime NOT NULL,
+  `modified` datetime NOT NULL,
+  `status` enum('1','0') COLLATE utf8_unicode_ci NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+--
+-- Contenu de la table `users`
+--
+
+INSERT INTO `users` (`id`, `fname`, `name`, `email`, `skills`, `experiences`, `birthday`, `password`, `gender`, `phone`, `created`, `modified`, `status`) VALUES
+(30, 'alex', 'born', 'alexandrebornstein@gmail.com', 'des chiens', 'des chiens', '2017-01-02', '0cc175b9c0f1b6a831c399e269772661', 'Male', '000', '2017-04-27 19:16:36', '2017-04-27 19:16:36', '1'),
+(31, 'pierre', 'born', 'alexandrebornstein@gmail.fr', 'des chiens', 'des chiens', '2017-01-02', '0cc175b9c0f1b6a831c399e269772661', 'Male', '000', '2017-04-27 19:17:00', '2017-04-27 19:17:00', '1');
+
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `users_candidatures`
+--
+
+CREATE TABLE `users_candidatures` (
+  `id` int(11) NOT NULL,
+  `idUser` int(11) NOT NULL,
+  `idOffre` int(11) NOT NULL,
+  `resultats` int(11) NOT NULL,
+  `status` int(11) NOT NULL DEFAULT '0'
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+--
 -- Index pour les tables exportées
 --
 
@@ -83,15 +174,33 @@ ALTER TABLE `candidats`
   ADD PRIMARY KEY (`id`);
 
 --
--- Index pour la table `lm`
---
-ALTER TABLE `lm`
-  ADD PRIMARY KEY (`id`);
-
---
 -- Index pour la table `offres`
 --
 ALTER TABLE `offres`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Index pour la table `quiz`
+--
+ALTER TABLE `quiz`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Index pour la table `score`
+--
+ALTER TABLE `score`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Index pour la table `users`
+--
+ALTER TABLE `users`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Index pour la table `users_candidatures`
+--
+ALTER TABLE `users_candidatures`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -102,17 +211,32 @@ ALTER TABLE `offres`
 -- AUTO_INCREMENT pour la table `candidats`
 --
 ALTER TABLE `candidats`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
---
--- AUTO_INCREMENT pour la table `lm`
---
-ALTER TABLE `lm`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=57;
 --
 -- AUTO_INCREMENT pour la table `offres`
 --
 ALTER TABLE `offres`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+--
+-- AUTO_INCREMENT pour la table `quiz`
+--
+ALTER TABLE `quiz`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+--
+-- AUTO_INCREMENT pour la table `score`
+--
+ALTER TABLE `score`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+--
+-- AUTO_INCREMENT pour la table `users`
+--
+ALTER TABLE `users`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=32;
+--
+-- AUTO_INCREMENT pour la table `users_candidatures`
+--
+ALTER TABLE `users_candidatures`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

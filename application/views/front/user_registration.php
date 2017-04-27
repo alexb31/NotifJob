@@ -83,16 +83,21 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             <?php echo validation_errors(); ?>
             <?php echo form_open('form'); ?>
 
-            <label for="prenom">prenom</label>
+            <label for="prenom">Prenom</label>
             <input type="text" name="prenom" id="prenom" value="<?php echo set_value("prenom", ""); ?>"/>
 
-            <label for="name">Last Name</label>
-            <input class="form-control" name="nom" placeholder="Last Name" type="text" value="<?php
+            <label for="name">Nom</label>
+            <input class="form-control" name="nom" placeholder="Nom" type="text" value="<?php
             echo set_value('nom'); ?>" />
             <span class="text-danger"><?php echo form_error('nom'); ?></span>
 
             <label for="email">email</label>
             <input type="text" name="email" id="email" value="<?php echo set_value("email", ""); ?>"/>
+
+            <label for="telephone">numero de telephone</label>
+            <input type="text" name="telephone" id="telephone" value="<?php echo set_value
+            ("telephone",
+                ""); ?>"/>
 
             <label for="mdp">Mot de Passe</label>
             <input type="password" name="mdp" id="mdp" value="<?php echo set_value("mdp", ""); ?>"/>

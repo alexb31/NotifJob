@@ -1,0 +1,154 @@
+*{
+	font-family: 'Lato', sans-serif;
+}
+section {
+    padding: 80px 0 !important;
+}
+
+
+/***************************
+----------- Menu -----------
+*****************************/
+
+#mainNav{
+	background-color: #fff;
+}
+
+#menu a{
+	font-family: 'Lato', sans-serif;
+	color: #4a5861;
+	text-transform: initial;
+}
+#menu a[href='#connexion']{
+	color: #ed8111;
+}
+
+
+.navbar-header img{
+	position: absolute;
+    top: 0;
+}
+
+/***************************
+------- Header-Content ------
+*****************************/
+header{
+	min-height: 680px !important;
+	
+}
+.header-content{
+	background-color: rgba(0, 0, 0, 0.35) !important;
+	height: 100%;
+    padding: 80px 0 !important;
+}
+.homeHeading img{
+	margin: 0 auto;
+}
+#recherche-group {
+    max-width: 480px;
+    margin: 60px auto;
+}
+#recherche-group span{
+	background-color: #ed8111;
+    color: #fff;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    padding: 0 60px;
+    border: 1px solid #ed8111;
+    font-size: 20px;
+}
+#infos-group{
+	margin: 30px 0;
+}
+#input-recherche{
+	border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+/***************************
+------- Offres ------
+*****************************/
+.fa-pointer:before {
+    content: url('../img/icons/pointer.png');
+}
+.fa-search-mobile:before {
+    content: url('../img/icons/search-mobile.png');
+}
+.fa-entretien:before {
+    content: url('../img/icons/right-entretien.png');
+}
+
+#offres{
+	background-image: url(../img/bg-gray.png);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.offre-box{
+	background-color: #fff;
+	min-height: 300px;
+	
+	
+	-moz-box-shadow: 2px 2px 6px 0px #656565;
+	-webkit-box-shadow: 2px 2px 6px 0px #656565;
+	-o-box-shadow: 2px 2px 6px 0px #656565;
+	box-shadow: 2px 2px 6px 0px #656565;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+}
+
+.header-offre-box{
+		
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	
+	background: url(../img/icons/bg-wifi.png) left top no-repeat;
+	background-color: #4a5861;
+	padding: 1px 0;
+}
+.header-offre-box h3{
+	color: #fff;
+	font-size: 20px;
+	font-family: 'Roboto', sans-serif;
+}
+button.btn-detail{
+	background-color: #ed8111;
+	color: #fff;
+	font-family: 'Roboto', sans-serif;
+	border: none;
+    border-radius: 300px;
+	padding: 6px 50px;
+    font-size: 16px;
+}
+.offre-box .footer-btn{
+	position: absolute;
+    bottom: 30px;
+    width: 90%;
+}
+#tt-offres{	
+	text-align: right;
+}
+#tt-offres a{
+	color: #fff;
+}
+/***************************
+------- Contact ------
+*****************************/
+.fa-envelope-o{
+	color: #ed8111;
+}
+
+/***************************
+------- Footer ------
+*****************************/
+footer{
+	text-align: center;
+    background-color: #4a5861;
+    color: #fff;
+    padding: 10px 0;
+}
+footer a{
+	color: #fff;
+}
+.reseaux-sociaux a{
+	margin: 0 10px;
+}
