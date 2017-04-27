@@ -19,7 +19,7 @@ class Users extends CI_Controller {
         if($this->session->userdata('isUserLoggedIn')){
             $data['user'] = $this->user->getRows(array('id'=>$this->session->userdata('userId')));
             //load the view
-            $this->load->view('front/account', $data);
+            $this->load->view('front/mon_profil', $data);
         }else{
             redirect('users/login');
         }
@@ -52,7 +52,7 @@ class Users extends CI_Controller {
                 if($checkLogin){
                     $this->session->set_userdata('isUserLoggedIn',TRUE);
                     $this->session->set_userdata('userId',$checkLogin['id']);
-                    redirect('front/account/');
+                    redirect('users/account/');
                 }else{
                     $data['error_msg'] = 'Wrong email or password, please try again.';
                 }

@@ -6,7 +6,8 @@
     include("_menu.php");
 ?>
 	<header id="header-mon-profil" class="header-orange">                       
-        <h3><span>Marcel Pudin</span></h3>       
+        <h3><span><?php echo $user['fname']; ?> <?php echo
+				$user['name'];?></span></h3>
 	</header>
 	
 	<!--all-jobs-offers-list-->
@@ -14,19 +15,20 @@
 		<div class="container">
 			<div id="infos">
 				<h4>Email</h4>
-				<p>marcel.pudin@gmail.com</p>                
+				<p><?php echo $user['email']; ?></p>
                 
 				<h4>Téléphone</h4>
-				<p>06  25 32 31 56 55</p>                
+				<p><?php echo $user['phone']; ?></p>
                
 				<h4>Compétences</h4>
-                <p class="desc-profil">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis et enim aperiam inventore, similique necessitatibus neque non! Doloribus, modi sapiente laboriosam aperiam fugiat laborum. Sequi mollitia, necessitatibus quae sint natus.</p>                
+                <p class="desc-profil"><?php echo $user['skills']; ?></p>
                 
 				<h4>Expériences</h4>
-                <p class="desc-profil">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis et enim aperiam inventore, similique necessitatibus neque non! Doloribus, modi sapiente laboriosam aperiam fugiat laborum. Sequi mollitia, necessitatibus quae sint natus.</p>
+                <p class="desc-profil"><?php echo $user['experiences']; ?></p>
                 
 				<div>
 					<button type="button" class="btn-detail">Contacter</button>
+					<button type="button" class="btn-detail">Faire le test</button>
 				</div> 
 			</div>
 		</div>
