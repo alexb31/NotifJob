@@ -326,11 +326,11 @@ section#all-offres {
 #infos{
 	width: 100%;
 }
-#infos-profil h4{
+#infos-profil h4, #infos-offres h4{
 	color: #f08f22;
 	font-size: 15px;
 }
-#infos-profil p{
+#infos-profil p, #infos-offres p{
 	font-size: 12px;
 	margin-bottom: 40px;
 }
@@ -345,6 +345,37 @@ section#all-offres {
 	padding-top: 0px !important;
     padding-bottom: 0px !important;
 }
-#infos-profil .container{
+#infos-profil .container, #infos-offres .container{
 	border-left: 1px solid #cdd6db;
+}
+
+#offre-nbr{
+	-moz-box-shadow: 2px 2px 6px 0px #656565;
+	-webkit-box-shadow: 2px 2px 6px 0px #656565;
+	-o-box-shadow: 2px 2px 6px 0px #656565;
+	box-shadow: 2px 2px 6px 0px #656565;
+	background-color: #fff;
+	border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    text-align: center;    
+    padding-top: 15px;
+    font-size: 15px;
+    margin: 0 auto;
+	color: #000;
+	position: absolute;
+    right: 47%;
+}
+
+#infos-offres{
+	margin: 0 auto;
+    max-width: 900px;
+}
+div#loc-offre {   
+    position: absolute;
+    top: 0;
+    right: 40%;
+}
+#ct-bbtn {
+	padding-left: 20px;
 }

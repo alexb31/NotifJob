@@ -19,6 +19,9 @@ and (max-device-width : 480px) {
 		position: absolute;
 		right: 40%;
 	}
+	div#loc-offre {
+		position: static;		
+	}
 }
 
 /* Smartphones (landscape) ----------- */
