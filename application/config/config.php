@@ -37,6 +37,10 @@ $config['base_url'] = 'http://localhost/notifjob/';
 */
 $config['index_page'] = 'index.php';
 
+$config['admin_email'] = 'alexandrebornstein@gmail.com';
+
+$config['bot_email'] = 'alexandrebornstein@gmail.com';
+
 /*
 |--------------------------------------------------------------------------
 | URI PROTOCOL
