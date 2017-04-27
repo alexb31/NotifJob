@@ -95,6 +95,20 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <?php } ?>
 
         <br><br>
+
+        <h1>Veuillez sélectionner la date et l'heure qui vous conviendrait pour un eventuel
+            entretien :</h1>
+
+        <label for="Jour">Jour : </label>
+        <input type="text" class="form-control datepicker" id=""
+               placeholder="Jour" name="Jour"
+               value="<?php echo set_value("Jour", ""); ?>"/>
+
+        <label for="Heure">Heure : </label>
+        <input type="text" class="form-control datepicker" id=""
+               placeholder="Heure" name="Heure"
+               value="<?php echo set_value("Heure", ""); ?>"/>
+
         <input type="submit" value="Envoyer!">
 
         </form>
