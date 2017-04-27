@@ -316,3 +316,35 @@ section#all-offres {
     float: right;
 	font-size: 13px
 }
+
+#header-mon-profil h3 span{
+	color: #f08f22;
+	background-color: #fff;
+	border-radius: 50px;
+    padding: 10px 20px;
+}
+#infos{
+	width: 100%;
+}
+#infos-profil h4{
+	color: #f08f22;
+	font-size: 15px;
+}
+#infos-profil p{
+	font-size: 12px;
+	margin-bottom: 40px;
+}
+.desc-profil{
+	color: #fff;
+    background: url(../img/bg-orange.png) repeat-y bottom;
+    padding: 10px 15px;
+    max-width: 300px;
+    border-radius: 30px;
+}
+#infos-profil{	
+	padding-top: 0px !important;
+    padding-bottom: 0px !important;
+}
+#infos-profil .container{
+	border-left: 1px solid #cdd6db;
+}
