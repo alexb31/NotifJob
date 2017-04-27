@@ -82,7 +82,8 @@
                         </div>
                         
                     </div>
-                </div>     
+                </div>
+				
             </div>
 			<p id="tt-offres"><a>Toute les offres ></a></p>
         </div>

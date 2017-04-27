@@ -5,7 +5,7 @@
 <?php
     include("_menu.php");
 ?>
-	<header>
+	<header id="template-header">
         <div class="header-content">
             <div class="header-content-inner">
                 <a class="homeHeading" href="">
