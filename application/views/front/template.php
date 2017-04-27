@@ -9,7 +9,7 @@
         <div class="header-content">
             <div class="header-content-inner">
                 <a class="homeHeading" href="">
-                    <img src="../../application/web/img/logo.png" class="img-responsive" alt="">    
+                    <img src="<?php echo base_url();?>application/web/img/logo.png" class="img-responsive" alt="">    
                 </a>           
                 
                 <div id="recherche-group" class="input-group">      
