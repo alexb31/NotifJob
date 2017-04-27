@@ -17,7 +17,7 @@
                         <a class="page-scroll" href="#la-une">A la une</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#rechercher-offres">Rechercher des offres</a>
+                        <a class="page-scroll" href="<?php echo base_url();?>recherche">Rechercher des offres</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#mes-offres">Mes offres</a>
@@ -26,7 +26,7 @@
                         <a class="page-scroll" href="#contact">Contact</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#connexion">Connexion</a>
+                        <a class="page-scroll" href="<?php echo base_url();?>login">Connexion</a>
                     </li>
                 </ul>
             </div>
