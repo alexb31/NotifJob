@@ -15,6 +15,10 @@ and (max-device-width : 480px) {
 	#header-une {		
 		min-height: initial !important;
 	}
+	#annonces-nbr{	
+		position: absolute;
+		right: 40%;
+	}
 }
 
 /* Smartphones (landscape) ----------- */
