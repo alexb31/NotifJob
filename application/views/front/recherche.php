@@ -61,31 +61,20 @@
 		<div class="container">
 			<div class="row">			
 					
-				<div class="featured-box">
+			<?php foreach($offres as $offre): ?>
+		        <div class="featured-box">
 					<div class="featured-box-col1 hidden-xs">
 							<span>144</span></br>candidatures
 					</div>	
 					<div class="featured-box-col2">
-							<h3>Développeur Front End</h3>
-							<p>A partir du 10/05/2017</p>						
+							<h3><?= $offre['intitule']; ?></h3>
+							<p>A partir du <?= $offre['date_debut']; ?></p>						
 					</div>
-					<div class="featured-box-col3">
+					<a href="<?php echo base_url();?>offre/<?= $offre['id']; ?>"><div class="featured-box-col3">
 							<button type="button" class="btn-detail"><i class="fa fa-2x fa-eye" aria-hidden="true"></i></button>
-					</div>					
-				</div>
-			
-				<div class="featured-box">
-					<div class="featured-box-col1 hidden-xs">
-							<span>101</span></br>candidatures
-					</div>	
-					<div class="featured-box-col2">
-							<h3>Web Designer</h3>
-							<p>A partir du 10/05/2017</p>						
-					</div>
-					<div class="featured-box-col3">
-							<button type="button" class="btn-detail"><i class="fa fa-2x fa-eye" aria-hidden="true"></i></button>
-					</div>					
-				</div>         
+					</div></a>				
+				</div>	
+		    <?php endforeach; ?>         
 			   
 			</div>
 		</div>

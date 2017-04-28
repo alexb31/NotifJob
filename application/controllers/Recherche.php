@@ -20,6 +20,12 @@ class Recherche extends CI_Controller {
 	 */
 	public function index()
 	{
-		$this->load->view('front/recherche');
+		$query = $this->db->get('offres');
+
+		foreach ($query->result_array() as $row){
+  			$data['offres'][] = $row;
+		}
+
+		$this->load->view('front/recherche', $data);
 	}
 }

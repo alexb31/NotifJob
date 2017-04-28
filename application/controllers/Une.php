@@ -20,6 +20,13 @@ class Une extends CI_Controller {
 	 */
 	public function index()
 	{
-		$this->load->view('front/la_une');
+		$query = $this->db->get('offres');
+
+		foreach ($query->result_array() as $row){
+  			$data['offres'][] = $row;
+		}
+		//var_dump($data);die;
+
+		$this->load->view('front/la_une', $data);
 	}
 }
