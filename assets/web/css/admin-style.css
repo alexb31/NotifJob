@@ -1,0 +1,39 @@
+*{
+	font-family: 'Lato', sans-serif;
+}
+.logo-menu{
+	text-align: center;
+}
+#sidebar-wrapper .search-form{
+	padding: 0;
+    margin-top: 50px;
+	left: -20px;
+    position: relative;
+}
+#sidebar-wrapper {
+    color: #fff;
+	font-family: 'Roboto', sans-serif;
+}
+#sidebar-wrapper a{
+    color: #fff;
+	font-family: 'Roboto', sans-serif;
+}
+#sidebar-wrapper li {
+	border-bottom: 1px solid #fff;	
+}
+.btn-menu, .btn-orange{
+	background-color: #ed8111;
+	color: #fff;
+	font-family: 'Roboto', sans-serif;
+	border: none;
+    border-radius: 300px;
+	padding: 6px 50px;
+    font-size: 16px;
+}
+.btn-menu{
+	border-radius: 0px !important;
+}
+.offre-header{
+	background-color : #4d5c64;
+	color: #fff;
+}
