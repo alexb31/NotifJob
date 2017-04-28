@@ -138,7 +138,7 @@ class Users extends CI_Controller {
 
         //Initialise the email helper and set the "from"
         $this->email->initialize(array("mailtype" => "html"));
-        $this->email->from("simontonton@gmail.com", "Lesley Nowell HR Consultancy");
+        $this->email->from("alexandre@gmail.com", "gfi recrutement");
 
         //Set the recipient, subject and message based on the page
 
@@ -148,10 +148,9 @@ class Users extends CI_Controller {
         //$this->email->to('enquiries@lesleynowell.com');
         $this->email->to('alexandrebornstein@gmail.com');
         $this->email->subject('Website Enquirie');
-        $this->email->message("My firstname is: {$content["fname"]} <br /><br />My email address 
-        is: {$content["email"]} <br /><br />
-        My telephone number is:{$content["phone"]}<br /><br 
-        />The enquiry is regarding: <br /><br />Enquiry:");
+        $this->email->message("Bonjour {$content["fname"]} !<br /><br />Vous pouvez désormais 
+        postuler à nos offres d'emplois.<br /><br />
+        />Cordialement <br /><br />gfi recrutement");
 
 
 
