@@ -49,7 +49,7 @@
 			</div>
 		</div>
 		<div id="ct-bbtn">
-			<button type="button" class="btn-detail">Postuler</button>
+			<a href="<?php echo base_url();?>users/account"><button type="button" class="btn-detail">Postuler</button></a>
 		</div> 
 	</section>
     <hr>
