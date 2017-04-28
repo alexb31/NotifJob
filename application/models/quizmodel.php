@@ -1,6 +1,6 @@
 <?php
 
-class quizmodel extends CI_Model {
+class Quizmodel extends CI_Model {
 
     public function getQuestions()
     {
