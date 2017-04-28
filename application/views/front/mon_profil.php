@@ -28,7 +28,7 @@
                 
 				<div>
 					<button type="button" class="btn-detail">Contacter</button>
-					<button type="button" class="btn-detail"><a href="<?php echo base_url();?>index.php/Questions/quizdisplay">Faire le test</a></button>
+					<button type="button" class="btn-detail"><a href="<?php echo base_url();?>Questions/quizdisplay">Faire le test</a></button>
 				</div> 
 			</div>
 		</div>
