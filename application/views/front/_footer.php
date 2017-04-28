@@ -1,9 +1,9 @@
 <section id="contact">
         <div class="container">
             <div class="row">             
-                <div class="col-lg-4 text-center">
+                <div class="text-center">
                     <i class="fa fa-envelope-o fa-3x sr-contact"></i>
-                    <p>Restez informez des actualités du service et des mises à jour</p>
+                    <p>Restez informez des actualités du service </br>et des mises à jour</p>
 					<button type="button" class="btn-detail">S’inscrire à la newsletter</button>
                 </div>
             </div>
