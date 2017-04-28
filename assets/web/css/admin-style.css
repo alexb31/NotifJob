@@ -92,3 +92,9 @@
     border-radius: 50px !important;
     border-radius: 50px !important;
 }
+#page-inner i{
+	color: #4a5861;
+}
+#page-inner a h4{
+	color: #4a5861;
+}
