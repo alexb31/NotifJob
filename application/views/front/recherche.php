@@ -70,7 +70,7 @@
 							<h3><?= $offre['intitule']; ?></h3>
 							<p>A partir du <?= $offre['date_debut']; ?></p>						
 					</div>
-					<a href="<?php echo base_url();?>offre/<?= $offre['id']; ?>"><div class="featured-box-col3">
+					<a href="<?php echo base_url();?>offre?id=<?= $offre['id']; ?>"><div class="featured-box-col3">
 							<button type="button" class="btn-detail"><i class="fa fa-2x fa-eye" aria-hidden="true"></i></button>
 					</div></a>				
 				</div>	
