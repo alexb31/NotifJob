@@ -39,11 +39,6 @@
 				<input type="submit" name="loginSubmit" class="btn-detail" value="Connexion" />
 			</div>
 		</form>
-		<p>
-			<small>Vous n’avez pas encore de compte ? <a href="<?php echo base_url();
-				?>users/registration">Inscrivez-vous</a></small></br>
-			<small><a>Mot de passe oublié</a></small>
-		</p>
 		
 	</section>
 	<hr>
