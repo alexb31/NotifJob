@@ -38,6 +38,13 @@
 	
 	<!-- jQuery -->
     <script src="<?php echo base_url();?>assets/web/vendor/jquery/jquery.min.js"></script>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+    <!-- Timepicker -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.min.js"></script>
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.min.css">
 
     <!-- Bootstrap Core JavaScript -->
     <script src="<?php echo base_url();?>assets/web/vendor/bootstrap/js/bootstrap.min.js"></script>
@@ -49,6 +56,9 @@
 
     <!-- Theme JavaScript -->
     <script src="<?php echo base_url();?>assets/web/js/creative.min.js"></script>
+
+    <!-- Custom JavaScript -->
+    <script src="<?php echo base_url();?>assets/js/style.js"></script>
 	
 	
 	<!-- Google Fonts -->
