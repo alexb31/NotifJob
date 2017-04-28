@@ -23,10 +23,10 @@
                         <a class="page-scroll" href="#mes-offres">Mes offres</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#contact">Contact</a>
+                        <a class="page-scroll" href="<?php echo base_url();?>contact">Contact</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="<?php echo base_url();?>login">Connexion</a>
+                        <a class="page-scroll" href="<?php echo base_url();?>users/login">Connexion</a>
                     </li>
                 </ul>
             </div>

@@ -8,7 +8,6 @@ class Users extends CI_Controller {
         parent::__construct();
         $this->load->library('form_validation');
         $this->load->model('user');
-        $this->output->enable_profiler(TRUE);
     }
 
     /*
