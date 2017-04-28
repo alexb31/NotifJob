@@ -26,44 +26,20 @@
     <section id="offres">
         <div class="container">
             <div class="row">
+                <?php foreach($offres as $offre): ?>
                 <div class="col-lg-4 col-md-4 text-center">
                     <div class="offre-box">
                         <div class="header-offre-box">                            
-                            <h3>Développeur Front End</h3>
+                            <h3><?= $offre['intitule']; ?></h3>
                         </div>
                         <p>Description</p>
                         <div class="footer-btn">
-                            <button type="button" class="btn-detail">Details de l'offre</button>
+                            <a href="<?php echo base_url();?>offre?id=<?= $offre['id']; ?>"><button type="button" class="btn-detail">Details de l'offre</button></a>
                         </div>
                         
                     </div>
                 </div>
-				
-				<div class="col-lg-4 col-md-4 text-center">
-                    <div class="offre-box">
-                        <div class="header-offre-box">                            
-                            <h3>Développeur Back End</h3>
-                        </div>
-                        <p>Description</p>
-                        <div class="footer-btn">
-                            <button type="button" class="btn-detail">Details de l'offre</button>
-                        </div>
-                        
-                    </div>
-                </div>
-				
-				<div class="col-lg-4 col-md-4 text-center">
-                    <div class="offre-box">
-                        <div class="header-offre-box">                            
-                            <h3>Web Designer</h3>
-                        </div>
-                        <p>Description</p>
-                        <div class="footer-btn">
-                            <button type="button" class="btn-detail">Details de l'offre</button>
-                        </div>
-                        
-                    </div>
-                </div>     
+                <?php endforeach; ?> 
             </div>
 			<p id="tt-offres"><a>Toute les offres ></a></p>
         </div>

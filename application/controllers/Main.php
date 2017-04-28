@@ -17,7 +17,14 @@ class Main extends CI_Controller {
 
     public function index()
     {
-        $this->template_front('front/accueil.php');
+        $query = $this->db->get('offres', 3);
+
+        foreach ($query->result_array() as $row){
+            $data['offres'][] = $row;
+        }
+        //var_dump($data['offres']);die;
+
+        $this->template_front('front/accueil.php', $data);
     }
 
     function template_front($view = '', $data = '')
