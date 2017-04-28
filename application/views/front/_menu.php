@@ -14,7 +14,7 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul id="menu" class="nav navbar-nav navbar-right">
                     <li>
-                        <a class="page-scroll" href="#la-une">A la une</a>
+                        <a class="page-scroll" href="<?php echo base_url();?>une">A la une</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="<?php echo base_url();?>recherche">Rechercher des offres</a>

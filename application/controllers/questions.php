@@ -21,6 +21,9 @@ class Questions extends CI_Controller {
         $this->data['checks'] = array(
             'ques1' => $this->input->post('quizid1'),
             'ques2' => $this->input->post('quizid2'),
+            'ques3' => $this->input->post('quizid3'),
+            'ques4' => $this->input->post('quizid4'),
+            'ques5' => $this->input->post('quizid5'),
         );
 
         $this->load->model('quizmodel');
@@ -39,20 +42,17 @@ class Questions extends CI_Controller {
 
         //Initialise the email helper and set the "from"
         $this->email->initialize(array("mailtype" => "html"));
-        $this->email->from("simontonton@gmail.com", "Lesley Nowell HR Consultancy");
+        $this->email->from("alexandrebornstein@gmail.com", "gfi recrutement");
 
         //Set the recipient, subject and message based on the page
-
-
-
-
-        //$this->email->to('enquiries@lesleynowell.com');
-        $this->email->to('simontonton@gmail.com');
-        $this->email->subject('Website Enquirie');
-        $this->email->message("My firstname is: <br /><br />My email address 
-        is:  <br /><br />
-        My telephone number is: <br /><br 
-        />The enquiry is regarding: <br /><br />Enquiry:");
+        $this->email->to('alexandrebornstein@gmail.com');
+        $this->email->subject('Reponse Test Technique');
+        $this->email->message("Bonjour !<br /><br />Un utilisateur à répondu à un test technique
+        .<br /><br />
+        Voici ses réponses :<br /><br 
+        />Question 1 : {$content["quizid1"]} <br /><br />Question 2 : {$content["quizid2"]} <br 
+        /><br />Question 3 : {$content["quizid3"]} <br /><br />Question 4 : {$content["quizid4"]}
+         <br /><br />Question 5 : {$content["quizid5"]} <br /><br />");
 
 
 
